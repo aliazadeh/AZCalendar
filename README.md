@@ -1,6 +1,6 @@
 # AZPersianCalendar
-AZPersianCalendar is a Grate Calendar that Supports Georgian Calendar , Persian Calendar and Islamic Clanedar 
-you Can Also Convertind date from on Calendar Source to Other Calendar Types you can use With Boath ObjecticeC and Swift
+AZPersianCalendar is a  Calendar that Supports Georgian Calendar , Persian Calendar and Islamic Clanedar 
+you Can Also Converting date from on Calendar Source to Other Calendar Types you can use With Boath ObjecticeC and Swift
 
 #The contract :
 these 3 key Word is very Important : 
