@@ -5,12 +5,9 @@ you Can Also Convertind date from on Calendar Source to Other Calendar Types you
 #The contract :
 these 3 key Word is very Important : 
 
- Shamsi :
-meanse Persian Calenar (Hijri Shamsi , Khayam's Calendar and ...)
-  Hijri :
-meanse Hijri Ghamari Calendar , Islamic Calendar and ...
-<b> Miladi</b> :
-miladi Meanse Georgian Calendar
+ <b>Shamsi</b> : meanse Persian Calenar (Hijri Shamsi , Khayam's Calendar and ...)
+  <b>Hijri</b> : meanse Hijri Ghamari Calendar , Islamic Calendar and ...<br>
+<b> Miladi</b> : miladi Meanse Georgian Calendar
 
 # Installation : 
 
@@ -44,7 +41,8 @@ for Converting Date to each others you should use this format Of String :
 
 for converting use convert...DateTo...Date () as an input you shoud use String with format of "day-month-year" and you get Out put whit this format again 
 
-###Example : if you use AZPersianCalendar.ConvertShamsiDateToMiladiDate("17-3-1371") you see "7-6-1992" as Result
+###Example :
+if you use AZPersianCalendar.ConvertShamsiDateToMiladiDate("17-3-1371") you see "7-6-1992" as Result
 
 
 
