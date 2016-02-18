@@ -5,11 +5,11 @@ you Can Also Convertind date from on Calendar Source to Other Calendar Types you
 #The contract :
 these 3 key Word is very Important : 
 
-1. ## Shamsi :
+## Shamsi :
 meanse Persian Calenar (Hijri Shamsi , Khayam's Calendar and ...)
-2. ## Hijri :
+ ## Hijri :
 meanse Hijri Ghamari Calendar , Islamic Calendar and ...
-3.## Miladi :
+## Miladi :
 miladi Meanse Georgian Calendar
 
 # Installation : 
@@ -27,9 +27,11 @@ imort ConvertorViewController.h and ConvertorViewController.m to Your Project an
 for Using AZPersianCalendar Youd Don't Need instanse Object of this Class you Can call Function with calss name 'AZPersianCalendar'
 
 ## Geting today's date  :
-### Objective C -> [AZPersianCalendar getShamsiMonthNumber] , for Complete Date you shoud geShamsiDayNumber and getShamsiYearNumber , if you want to get Islamic Date use : [AZPersianCaledar getHijriDayNumber] and hijriMonthNumber and hijriYearNumber
+### Objective C :
+[AZPersianCalendar getShamsiMonthNumber] , for Complete Date you shoud geShamsiDayNumber and getShamsiYearNumber , if you want to get Islamic Date use : [AZPersianCaledar getHijriDayNumber] and hijriMonthNumber and hijriYearNumber
 
-### Swift -> for  getting today Date in Persian Mode :   AZPersianCalendar.getShamsiMonthNumber()  ,  AZPersianCalendar.getShamsiDayNumber() and AZPersianCalendar.getShamsiYearNumber() 
+### Swift -:
+for  getting today Date in Persian Mode :   AZPersianCalendar.getShamsiMonthNumber()  ,  AZPersianCalendar.getShamsiDayNumber() and AZPersianCalendar.getShamsiYearNumber() 
 
 for Islamic Date : AZPersianCalendar.getHijriDayNumber() , AZPersianCalendar.getHijriMonthNumber() and AZPersianCalendar.getHijriYearNumber()
 
