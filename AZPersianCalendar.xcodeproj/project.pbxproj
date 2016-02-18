@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18B117901C738A1C0087BABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B1178F1C738A1C0087BABD /* main.m */; };
+		18B117931C738A1C0087BABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B117921C738A1C0087BABD /* AppDelegate.m */; };
+		18B117961C738A1C0087BABD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B117951C738A1C0087BABD /* ViewController.m */; };
+		18B117991C738A1C0087BABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B117971C738A1C0087BABD /* Main.storyboard */; };
+		18B1179B1C738A1C0087BABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B1179A1C738A1C0087BABD /* Assets.xcassets */; };
+		18B1179E1C738A1C0087BABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B1179C1C738A1C0087BABD /* LaunchScreen.storyboard */; };
+		18B117A91C738A1C0087BABD /* AZPersianCalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B117A81C738A1C0087BABD /* AZPersianCalendarTests.m */; };
+		18B117B41C738A1C0087BABD /* AZPersianCalendarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B117B31C738A1C0087BABD /* AZPersianCalendarUITests.m */; };
+		18B117C61C738D560087BABD /* AZPersianCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B117C51C738D560087BABD /* AZPersianCalendar.m */; };
+		18B117C91C7397C90087BABD /* MySetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18B117C81C7397C90087BABD /* MySetting.plist */; };
+		18B117CC1C742DBB0087BABD /* backIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B117CA1C742DBB0087BABD /* backIcon.png */; };
+		18B117CD1C742DBB0087BABD /* nextIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B117CB1C742DBB0087BABD /* nextIcon.png */; };
+		18B117D11C74359F0087BABD /* Convert.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B117CF1C74359F0087BABD /* Convert.png */; };
+		18B117D21C74359F0087BABD /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B117D01C74359F0087BABD /* info.png */; };
+		18B117D41C743D750087BABD /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B117D31C743D750087BABD /* back.png */; };
+		18B117D71C743D950087BABD /* ConvertorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B117D61C743D950087BABD /* ConvertorViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18B117A51C738A1C0087BABD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B117831C738A1C0087BABD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B1178A1C738A1C0087BABD;
+			remoteInfo = AZPersianCalendar;
+		};
+		18B117B01C738A1C0087BABD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B117831C738A1C0087BABD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B1178A1C738A1C0087BABD;
+			remoteInfo = AZPersianCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18B1178B1C738A1C0087BABD /* AZPersianCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AZPersianCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B1178F1C738A1C0087BABD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18B117911C738A1C0087BABD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18B117921C738A1C0087BABD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18B117941C738A1C0087BABD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18B117951C738A1C0087BABD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18B117981C738A1C0087BABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18B1179A1C738A1C0087BABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18B1179D1C738A1C0087BABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18B1179F1C738A1C0087BABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B117A41C738A1C0087BABD /* AZPersianCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AZPersianCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B117A81C738A1C0087BABD /* AZPersianCalendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AZPersianCalendarTests.m; sourceTree = "<group>"; };
+		18B117AA1C738A1C0087BABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B117AF1C738A1C0087BABD /* AZPersianCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AZPersianCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B117B31C738A1C0087BABD /* AZPersianCalendarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AZPersianCalendarUITests.m; sourceTree = "<group>"; };
+		18B117B51C738A1C0087BABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B117C41C738D560087BABD /* AZPersianCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZPersianCalendar.h; path = Classes/AZPersianCalendar.h; sourceTree = "<group>"; };
+		18B117C51C738D560087BABD /* AZPersianCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZPersianCalendar.m; path = Classes/AZPersianCalendar.m; sourceTree = "<group>"; };
+		18B117C81C7397C90087BABD /* MySetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MySetting.plist; sourceTree = "<group>"; };
+		18B117CA1C742DBB0087BABD /* backIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backIcon.png; path = images/backIcon.png; sourceTree = "<group>"; };
+		18B117CB1C742DBB0087BABD /* nextIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nextIcon.png; path = images/nextIcon.png; sourceTree = "<group>"; };
+		18B117CF1C74359F0087BABD /* Convert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Convert.png; path = images/Convert.png; sourceTree = "<group>"; };
+		18B117D01C74359F0087BABD /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info.png; path = images/info.png; sourceTree = "<group>"; };
+		18B117D31C743D750087BABD /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = images/back.png; sourceTree = "<group>"; };
+		18B117D51C743D950087BABD /* ConvertorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertorViewController.h; sourceTree = "<group>"; };
+		18B117D61C743D950087BABD /* ConvertorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertorViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18B117881C738A1C0087BABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B117A11C738A1C0087BABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B117AC1C738A1C0087BABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18B117821C738A1C0087BABD = {
+			isa = PBXGroup;
+			children = (
+				18B117D51C743D950087BABD /* ConvertorViewController.h */,
+				18B117D61C743D950087BABD /* ConvertorViewController.m */,
+				18B117CE1C742DBF0087BABD /* images */,
+				18B117C81C7397C90087BABD /* MySetting.plist */,
+				18B117C71C738D5D0087BABD /* Classes */,
+				18B1178D1C738A1C0087BABD /* AZPersianCalendar */,
+				18B117A71C738A1C0087BABD /* AZPersianCalendarTests */,
+				18B117B21C738A1C0087BABD /* AZPersianCalendarUITests */,
+				18B1178C1C738A1C0087BABD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18B1178C1C738A1C0087BABD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B1178B1C738A1C0087BABD /* AZPersianCalendar.app */,
+				18B117A41C738A1C0087BABD /* AZPersianCalendarTests.xctest */,
+				18B117AF1C738A1C0087BABD /* AZPersianCalendarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B1178D1C738A1C0087BABD /* AZPersianCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				18B117911C738A1C0087BABD /* AppDelegate.h */,
+				18B117921C738A1C0087BABD /* AppDelegate.m */,
+				18B117941C738A1C0087BABD /* ViewController.h */,
+				18B117951C738A1C0087BABD /* ViewController.m */,
+				18B117971C738A1C0087BABD /* Main.storyboard */,
+				18B1179A1C738A1C0087BABD /* Assets.xcassets */,
+				18B1179C1C738A1C0087BABD /* LaunchScreen.storyboard */,
+				18B1179F1C738A1C0087BABD /* Info.plist */,
+				18B1178E1C738A1C0087BABD /* Supporting Files */,
+			);
+			path = AZPersianCalendar;
+			sourceTree = "<group>";
+		};
+		18B1178E1C738A1C0087BABD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18B1178F1C738A1C0087BABD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18B117A71C738A1C0087BABD /* AZPersianCalendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				18B117A81C738A1C0087BABD /* AZPersianCalendarTests.m */,
+				18B117AA1C738A1C0087BABD /* Info.plist */,
+			);
+			path = AZPersianCalendarTests;
+			sourceTree = "<group>";
+		};
+		18B117B21C738A1C0087BABD /* AZPersianCalendarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18B117B31C738A1C0087BABD /* AZPersianCalendarUITests.m */,
+				18B117B51C738A1C0087BABD /* Info.plist */,
+			);
+			path = AZPersianCalendarUITests;
+			sourceTree = "<group>";
+		};
+		18B117C71C738D5D0087BABD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				18B117C41C738D560087BABD /* AZPersianCalendar.h */,
+				18B117C51C738D560087BABD /* AZPersianCalendar.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		18B117CE1C742DBF0087BABD /* images */ = {
+			isa = PBXGroup;
+			children = (
+				18B117D31C743D750087BABD /* back.png */,
+				18B117CF1C74359F0087BABD /* Convert.png */,
+				18B117D01C74359F0087BABD /* info.png */,
+				18B117CA1C742DBB0087BABD /* backIcon.png */,
+				18B117CB1C742DBB0087BABD /* nextIcon.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18B1178A1C738A1C0087BABD /* AZPersianCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B117B81C738A1C0087BABD /* Build configuration list for PBXNativeTarget "AZPersianCalendar" */;
+			buildPhases = (
+				18B117871C738A1C0087BABD /* Sources */,
+				18B117881C738A1C0087BABD /* Frameworks */,
+				18B117891C738A1C0087BABD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AZPersianCalendar;
+			productName = AZPersianCalendar;
+			productReference = 18B1178B1C738A1C0087BABD /* AZPersianCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18B117A31C738A1C0087BABD /* AZPersianCalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B117BB1C738A1C0087BABD /* Build configuration list for PBXNativeTarget "AZPersianCalendarTests" */;
+			buildPhases = (
+				18B117A01C738A1C0087BABD /* Sources */,
+				18B117A11C738A1C0087BABD /* Frameworks */,
+				18B117A21C738A1C0087BABD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B117A61C738A1C0087BABD /* PBXTargetDependency */,
+			);
+			name = AZPersianCalendarTests;
+			productName = AZPersianCalendarTests;
+			productReference = 18B117A41C738A1C0087BABD /* AZPersianCalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18B117AE1C738A1C0087BABD /* AZPersianCalendarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B117BE1C738A1C0087BABD /* Build configuration list for PBXNativeTarget "AZPersianCalendarUITests" */;
+			buildPhases = (
+				18B117AB1C738A1C0087BABD /* Sources */,
+				18B117AC1C738A1C0087BABD /* Frameworks */,
+				18B117AD1C738A1C0087BABD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B117B11C738A1C0087BABD /* PBXTargetDependency */,
+			);
+			name = AZPersianCalendarUITests;
+			productName = AZPersianCalendarUITests;
+			productReference = 18B117AF1C738A1C0087BABD /* AZPersianCalendarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B117831C738A1C0087BABD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ali Azadeh";
+				TargetAttributes = {
+					18B1178A1C738A1C0087BABD = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					18B117A31C738A1C0087BABD = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 18B1178A1C738A1C0087BABD;
+					};
+					18B117AE1C738A1C0087BABD = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 18B1178A1C738A1C0087BABD;
+					};
+				};
+			};
+			buildConfigurationList = 18B117861C738A1C0087BABD /* Build configuration list for PBXProject "AZPersianCalendar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18B117821C738A1C0087BABD;
+			productRefGroup = 18B1178C1C738A1C0087BABD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B1178A1C738A1C0087BABD /* AZPersianCalendar */,
+				18B117A31C738A1C0087BABD /* AZPersianCalendarTests */,
+				18B117AE1C738A1C0087BABD /* AZPersianCalendarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18B117891C738A1C0087BABD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B1179E1C738A1C0087BABD /* LaunchScreen.storyboard in Resources */,
+				18B117CD1C742DBB0087BABD /* nextIcon.png in Resources */,
+				18B117D41C743D750087BABD /* back.png in Resources */,
+				18B117D11C74359F0087BABD /* Convert.png in Resources */,
+				18B117C91C7397C90087BABD /* MySetting.plist in Resources */,
+				18B1179B1C738A1C0087BABD /* Assets.xcassets in Resources */,
+				18B117CC1C742DBB0087BABD /* backIcon.png in Resources */,
+				18B117991C738A1C0087BABD /* Main.storyboard in Resources */,
+				18B117D21C74359F0087BABD /* info.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B117A21C738A1C0087BABD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B117AD1C738A1C0087BABD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18B117871C738A1C0087BABD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B117961C738A1C0087BABD /* ViewController.m in Sources */,
+				18B117C61C738D560087BABD /* AZPersianCalendar.m in Sources */,
+				18B117931C738A1C0087BABD /* AppDelegate.m in Sources */,
+				18B117901C738A1C0087BABD /* main.m in Sources */,
+				18B117D71C743D950087BABD /* ConvertorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B117A01C738A1C0087BABD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B117A91C738A1C0087BABD /* AZPersianCalendarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B117AB1C738A1C0087BABD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B117B41C738A1C0087BABD /* AZPersianCalendarUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18B117A61C738A1C0087BABD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B1178A1C738A1C0087BABD /* AZPersianCalendar */;
+			targetProxy = 18B117A51C738A1C0087BABD /* PBXContainerItemProxy */;
+		};
+		18B117B11C738A1C0087BABD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B1178A1C738A1C0087BABD /* AZPersianCalendar */;
+			targetProxy = 18B117B01C738A1C0087BABD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18B117971C738A1C0087BABD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B117981C738A1C0087BABD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18B1179C1C738A1C0087BABD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B1179D1C738A1C0087BABD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18B117B61C738A1C0087BABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18B117B71C738A1C0087BABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18B117B91C738A1C0087BABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AZPersianCalendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.aliazadeh.AZPersianCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18B117BA1C738A1C0087BABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AZPersianCalendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.aliazadeh.AZPersianCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18B117BC1C738A1C0087BABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AZPersianCalendarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.aliazadeh.AZPersianCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AZPersianCalendar.app/AZPersianCalendar";
+			};
+			name = Debug;
+		};
+		18B117BD1C738A1C0087BABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AZPersianCalendarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.aliazadeh.AZPersianCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AZPersianCalendar.app/AZPersianCalendar";
+			};
+			name = Release;
+		};
+		18B117BF1C738A1C0087BABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AZPersianCalendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.aliazadeh.AZPersianCalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AZPersianCalendar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		18B117C01C738A1C0087BABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AZPersianCalendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.aliazadeh.AZPersianCalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AZPersianCalendar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B117861C738A1C0087BABD /* Build configuration list for PBXProject "AZPersianCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B117B61C738A1C0087BABD /* Debug */,
+				18B117B71C738A1C0087BABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B117B81C738A1C0087BABD /* Build configuration list for PBXNativeTarget "AZPersianCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B117B91C738A1C0087BABD /* Debug */,
+				18B117BA1C738A1C0087BABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18B117BB1C738A1C0087BABD /* Build configuration list for PBXNativeTarget "AZPersianCalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B117BC1C738A1C0087BABD /* Debug */,
+				18B117BD1C738A1C0087BABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18B117BE1C738A1C0087BABD /* Build configuration list for PBXNativeTarget "AZPersianCalendarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B117BF1C738A1C0087BABD /* Debug */,
+				18B117C01C738A1C0087BABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18B117831C738A1C0087BABD /* Project object */;
+}
