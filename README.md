@@ -5,20 +5,20 @@ you Can Also Convertind date from on Calendar Source to Other Calendar Types you
 #The contract :
 these 3 key Word is very Important : 
 
-## Shamsi :
+ Shamsi :
 meanse Persian Calenar (Hijri Shamsi , Khayam's Calendar and ...)
- ## Hijri :
+  Hijri :
 meanse Hijri Ghamari Calendar , Islamic Calendar and ...
-## Miladi :
+<b> Miladi</b> :
 miladi Meanse Georgian Calendar
 
 # Installation : 
 
-A. ## Objective C : 
+A.  Objective C : 
 import ConvertorViewController.h and ConvertorViewController.m to Your Project
 
 
-B. ## Swift : 
+B.  Swift : 
 imort ConvertorViewController.h and ConvertorViewController.m to Your Project and inBridging-Header file  write #import"ConvertorViewController.h"
 
 
