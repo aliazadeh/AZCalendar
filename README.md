@@ -1,7 +1,5 @@
 # AZPersianCalendar
-AZPersianCalendar is a  Calendar that Supports Georgian Calendar , Persian Calendar and Islamic Clanedar 
-you Can Also Converting date from on Calendar Source to Other Calendar Types you can use With Boath ObjecticeC and Swift
-
+AZPersianCalendar is a  library for IOS it has georgian calendar , persian calendar hijri calendar (islamic calendar) , and you can convert dates from each calendar to each other simply 
 #The contract :
 these 3 key Word is very Important : 
 
@@ -35,14 +33,16 @@ for Islamic Date : AZPersianCalendar.getHijriDayNumber() , AZPersianCalendar.get
 
 ## Converting dates : 
 
-for Converting Date to each others you should use this format Of String :
-
-### 'Day-Month-Year'
-
-for converting use convert...DateTo...Date () as an input you shoud use String with format of "day-month-year" and you get Out put whit this format again 
-
+for converting date to each others you should use instance of CalendarType :
 ###Example :
-if you use AZPersianCalendar.ConvertShamsiDateToMiladiDate("17-3-1371") you see "7-6-1992" as Result
+CalendarType * myDtate = [[CalendarType alloc]init];
+mydate.day = 5 ;
+mydaye.month = 8 ;
+mydate.year = 1395;
+
+CalendarType * destination = [AzPersianCalendar ConvertShamsiDateToMiladiDate: mydate];
+
+now if you print destination.description you can see that destination is a georgian date that the day is eqaul 26 , the month is equal 10 and the year is equal 2016
 
 
 
