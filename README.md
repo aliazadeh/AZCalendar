@@ -7,6 +7,18 @@ these 3 key Word is very Important :
   <b>Hijri</b> : meanse Hijri Ghamari Calendar , Islamic Calendar and ...<br>
 <b> Miladi</b> : miladi Meanse Georgian Calendar
 
+
+
+![alt tag](http://aliazadeh.me/AZPersianCal/img2.png)
+
+
+
+
+
+
+
+
+
 # Installation : 
 
 A.  Objective C : 
