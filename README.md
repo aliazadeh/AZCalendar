@@ -29,7 +29,9 @@ imort ConvertorViewController.h and ConvertorViewController.m to Your Project an
 for Using AZPersianCalendar Youd Don't Need instanse Object of this Class you Can call Function with calss name 'AZPersianCalendar'
 
 
-![alt tag](http://aliazadeh.me/AZPersianCal/img1.png)
+
+
+ <img src="http://aliazadeh.me/AZPersianCal/img1.png" width="350" height = "auto" />
 
 ## Geting today's date  :
 ### Objective C :
