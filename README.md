@@ -30,8 +30,10 @@ for Using AZPersianCalendar Youd Don't Need instanse Object of this Class you Ca
 
 
 
+<p align="center">
+ <img src="http://aliazadeh.me/AZPersianCal/img1.png" width="280" height = "auto" margin = "auto" />
+</p>
 
- <img src="http://aliazadeh.me/AZPersianCal/img1.png" width="300" height = "auto" margin = "auto" />
 
 ## Geting today's date  :
 ### Objective C :
