@@ -14,11 +14,6 @@ these 3 key Word is very Important :
 
 
 
-
-
-
-
-
 # Installation : 
 
 A.  Objective C : 
@@ -32,6 +27,9 @@ imort ConvertorViewController.h and ConvertorViewController.m to Your Project an
 # Usage : 
 
 for Using AZPersianCalendar Youd Don't Need instanse Object of this Class you Can call Function with calss name 'AZPersianCalendar'
+
+
+![alt tag](http://aliazadeh.me/AZPersianCal/img1.png)
 
 ## Geting today's date  :
 ### Objective C :
