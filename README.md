@@ -1,5 +1,5 @@
-# AZPersianCalendar
-AZPersianCalendar is a  library for IOS it has georgian calendar , persian calendar hijri calendar (islamic calendar) , and you can convert dates from each calendar to each other simply 
+# AZCalendar
+AZCalendar is a  framework for IOS it has gregorian calendar , persian calendar hijri calendar (islamic calendar) , and you can convert dates from each calendar to each other simply 
 
 ![alt tag](http://aliazadeh.me/AZPersianCal/img5.png)
 
@@ -12,7 +12,7 @@ Simply use the Frame work that it is in the framework directory for ObjectiveC p
 
 # Usage : 
 
-for Using AZCalendar Youd Don't need instance Object of this Class you can call function with class name 'AZCalendar
+for Using AZCalendar you Don't need instance Object of this Class you can call function with class name 'AZCalendar
 
 <div align="center">
  <img src="http://aliazadeh.me/AZPersianCal/img1.png" width="300" height = "auto" margin = "auto" />
