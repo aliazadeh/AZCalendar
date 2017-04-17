@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		180C039F1EA31AF600A009A1 /* AZCalendarSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C039E1EA31AF600A009A1 /* AZCalendarSwift.framework */; };
+		18CD122B1EA462970073561F /* AZCalendarSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C039E1EA31AF600A009A1 /* AZCalendarSwift.framework */; };
+		18CD122C1EA462970073561F /* AZCalendarSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 180C039E1EA31AF600A009A1 /* AZCalendarSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18E852591EA0C76C0099553C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E852581EA0C76C0099553C /* AppDelegate.swift */; };
 		18E8525B1EA0C76C0099553C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8525A1EA0C76C0099553C /* ViewController.swift */; };
 		18E8525E1EA0C76C0099553C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E8525C1EA0C76C0099553C /* Main.storyboard */; };
@@ -26,6 +28,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				18CD122C1EA462970073561F /* AZCalendarSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				180C039F1EA31AF600A009A1 /* AZCalendarSwift.framework in Frameworks */,
+				18CD122B1EA462970073561F /* AZCalendarSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
