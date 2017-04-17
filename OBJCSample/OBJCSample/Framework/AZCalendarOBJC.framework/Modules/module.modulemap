@@ -1,0 +1,6 @@
+framework module AZCalendarOBJC {
+  umbrella header "AZCalendarOBJC.h"
+
+  export *
+  module * { export * }
+}
