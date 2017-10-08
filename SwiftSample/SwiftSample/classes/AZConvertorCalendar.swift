@@ -17,22 +17,22 @@ public enum CalendarType {
 public class AZConvertorCalendar {
     
     static func convertDate(inputType : CalendarType , inputDate : DateType , outputType : CalendarType)->DateType {
-    
+        
         var input = Calendar.Identifier.persian
         var output = Calendar.Identifier.persian
         
         let result = DateType.init(day: 0, month: 0, year: 0)
-  
+        
         switch inputType {
         case .persian:
             input = .persian
-        break
+            break
         case .gregorian :
             input = .gregorian
-        break
+            break
         case .hijri :
             input = .islamicCivil
-        break
+            break
         }
         
         switch outputType {
@@ -51,49 +51,16 @@ public class AZConvertorCalendar {
         
         var sourceComponent = DateComponents.init()
         
-        
-      
         sourceComponent.day = inputDate.day
         sourceComponent.month = inputDate.month
         sourceComponent.year = inputDate.year
         
-      
         let sourceDate = sourceCal.date(from: sourceComponent)
-        
         let destinationCal = Calendar.init(identifier: output)
         let destinationComponents = destinationCal.dateComponents([.year, .month, .day], from: sourceDate!)
-        
         result.day = destinationComponents.day!
-         result.month = destinationComponents.month!
-         result.year = destinationComponents.year!
-        
-//     let sourceCal = Calendar.init(identifier: input)
-//         var sourceComponent = DateComponents.init()
-//         let sourceDate = sourceCal.date(from: sourceComponent)!
-//        
-//    
-//     let dateFormatter = sourceCal.dateComponents([.year, .month, .day], from: sourceDate)
-//        
-//        dateFormatter.dateFormat = "dd-MM-yyyy"
-//     
-//    
-//        
-//       sourceComponent.day = inputDate.day
-//        sourceComponent.month = inputDate.month
-//        sourceComponent.year = inputDate.year
-//        
-//       
-//        
-//        
-//         let destinationCal = Calendar.init(identifier: output)
-//        
-//        let destinationComponents = destinationCal.dateComponents([.year, .month, .day], from: sourceDate)
-//        
-//       
-//        
-//        result.day = destinationComponents.day!
-//        result.month = destinationComponents.month!
-//        result.year = destinationComponents.year!
+        result.month = destinationComponents.month!
+        result.year = destinationComponents.year!
         
         return result
     }

@@ -44,12 +44,8 @@ public class AZCalendar {
     }
     
     public static func getDayIndex (date : DateType , calendar : CalendarType) -> Int {
-    var result = 0
-
+    
         var type = Calendar.Identifier.persian
-        
-
-        
         switch calendar {
         case .persian:
             type = .persian
@@ -61,55 +57,15 @@ public class AZCalendar {
             type = .islamicCivil
             break
         }
-        
-      
-        
         let myCal = Calendar.init(identifier: type)
-        
-        
         var component = DateComponents.init()
         component.day = date.day
          component.month = date.month
          component.year = date.year
-        
        let formatter = DateFormatter.init()
         formatter.dateFormat = "EEE"
-        
-        
-       
-        
         let myDate = myCal.date(from: component)
-        
-       
-        switch formatter.string(from: myDate!) {
-        case "Sun":
-            result = 0
-            break
-        case "Mon":
-            result = 1
-            break
-        case "Tue":
-            result = 2
-            break
-        case "Wed":
-            result = 3
-            break
-        case "Thu":
-            result = 4
-            break
-        case "Fri":
-            result = 5
-            break
-        case "Sat":
-            result = 6
-            break
-        default:
-            break
-        }
-        
-        
-        
-    return result
+      return  DayType(dayString: formatter.string(from: myDate!)).rawValue
     }
     
     public static func getDayName (calendar : CalendarType , date : DateType) -> String {
@@ -146,10 +102,7 @@ public class AZCalendar {
     }
     
     public static func getMonthName (calendar : CalendarType , date : DateType) -> String{
-        
-       
-       return AZMonthName.getMonthName(calendar: calendar, date: date)
-        
+      return AZMonthManager.getMonthName(calendar: calendar, monthNumber: date.month)
         
        }
     

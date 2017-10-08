@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		180C039F1EA31AF600A009A1 /* AZCalendarSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C039E1EA31AF600A009A1 /* AZCalendarSwift.framework */; };
-		18CD122B1EA462970073561F /* AZCalendarSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C039E1EA31AF600A009A1 /* AZCalendarSwift.framework */; };
-		18CD122C1EA462970073561F /* AZCalendarSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 180C039E1EA31AF600A009A1 /* AZCalendarSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		181D761E1F89DE71009AE49F /* AZConvertorCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D76131F89DE35009AE49F /* AZConvertorCalendar.swift */; };
+		181D761F1F89DE75009AE49F /* AZCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D76121F89DE35009AE49F /* AZCalendar.swift */; };
+		181D76201F89DE78009AE49F /* AZGregorianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D76141F89DE35009AE49F /* AZGregorianCalendar.swift */; };
+		181D76211F89DE7B009AE49F /* AZHijriCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D76151F89DE35009AE49F /* AZHijriCalendar.swift */; };
+		181D76221F89DE7E009AE49F /* AZMonthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D76161F89DE35009AE49F /* AZMonthManager.swift */; };
+		181D76231F89DE81009AE49F /* AZPersianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D76171F89DE35009AE49F /* AZPersianCalendar.swift */; };
+		181D76241F89DE84009AE49F /* DateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D76181F89DE35009AE49F /* DateType.swift */; };
+		181D76251F89DE88009AE49F /* AZGregorianMonthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D761A1F89DE35009AE49F /* AZGregorianMonthType.swift */; };
+		181D76261F89DE8B009AE49F /* AZHijriMonthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D761B1F89DE35009AE49F /* AZHijriMonthType.swift */; };
+		181D76271F89DE8F009AE49F /* AZPersianMonthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D761C1F89DE35009AE49F /* AZPersianMonthType.swift */; };
+		181D76281F89DE92009AE49F /* DayType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D761D1F89DE35009AE49F /* DayType.swift */; };
 		18E852591EA0C76C0099553C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E852581EA0C76C0099553C /* AppDelegate.swift */; };
 		18E8525B1EA0C76C0099553C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8525A1EA0C76C0099553C /* ViewController.swift */; };
 		18E8525E1EA0C76C0099553C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E8525C1EA0C76C0099553C /* Main.storyboard */; };
@@ -28,7 +36,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				18CD122C1EA462970073561F /* AZCalendarSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,7 +43,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		180C039E1EA31AF600A009A1 /* AZCalendarSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AZCalendarSwift.framework; sourceTree = "<group>"; };
+		181D76121F89DE35009AE49F /* AZCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZCalendar.swift; sourceTree = "<group>"; };
+		181D76131F89DE35009AE49F /* AZConvertorCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZConvertorCalendar.swift; sourceTree = "<group>"; };
+		181D76141F89DE35009AE49F /* AZGregorianCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZGregorianCalendar.swift; sourceTree = "<group>"; };
+		181D76151F89DE35009AE49F /* AZHijriCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZHijriCalendar.swift; sourceTree = "<group>"; };
+		181D76161F89DE35009AE49F /* AZMonthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZMonthManager.swift; sourceTree = "<group>"; };
+		181D76171F89DE35009AE49F /* AZPersianCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZPersianCalendar.swift; sourceTree = "<group>"; };
+		181D76181F89DE35009AE49F /* DateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateType.swift; sourceTree = "<group>"; };
+		181D761A1F89DE35009AE49F /* AZGregorianMonthType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZGregorianMonthType.swift; sourceTree = "<group>"; };
+		181D761B1F89DE35009AE49F /* AZHijriMonthType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZHijriMonthType.swift; sourceTree = "<group>"; };
+		181D761C1F89DE35009AE49F /* AZPersianMonthType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZPersianMonthType.swift; sourceTree = "<group>"; };
+		181D761D1F89DE35009AE49F /* DayType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayType.swift; sourceTree = "<group>"; };
 		18E852551EA0C76C0099553C /* SwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E852581EA0C76C0099553C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E8525A1EA0C76C0099553C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,14 +72,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180C039F1EA31AF600A009A1 /* AZCalendarSwift.framework in Frameworks */,
-				18CD122B1EA462970073561F /* AZCalendarSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181D76111F89DE35009AE49F /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				181D76121F89DE35009AE49F /* AZCalendar.swift */,
+				181D76131F89DE35009AE49F /* AZConvertorCalendar.swift */,
+				181D76141F89DE35009AE49F /* AZGregorianCalendar.swift */,
+				181D76151F89DE35009AE49F /* AZHijriCalendar.swift */,
+				181D76161F89DE35009AE49F /* AZMonthManager.swift */,
+				181D76171F89DE35009AE49F /* AZPersianCalendar.swift */,
+				181D76181F89DE35009AE49F /* DateType.swift */,
+				181D76191F89DE35009AE49F /* Type */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		181D76191F89DE35009AE49F /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				181D761A1F89DE35009AE49F /* AZGregorianMonthType.swift */,
+				181D761B1F89DE35009AE49F /* AZHijriMonthType.swift */,
+				181D761C1F89DE35009AE49F /* AZPersianMonthType.swift */,
+				181D761D1F89DE35009AE49F /* DayType.swift */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
 		18E8524C1EA0C76C0099553C = {
 			isa = PBXGroup;
 			children = (
@@ -82,9 +123,9 @@
 		18E852571EA0C76C0099553C /* SwiftSample */ = {
 			isa = PBXGroup;
 			children = (
+				181D76111F89DE35009AE49F /* classes */,
 				18E852741EA0FDA70099553C /* images */,
 				18E8526D1EA0C83C0099553C /* ViewControllers */,
-				18E8526A1EA0C7930099553C /* Framework */,
 				18E852581EA0C76C0099553C /* AppDelegate.swift */,
 				18E8525A1EA0C76C0099553C /* ViewController.swift */,
 				18E8525C1EA0C76C0099553C /* Main.storyboard */,
@@ -93,14 +134,6 @@
 				18E852641EA0C76C0099553C /* Info.plist */,
 			);
 			path = SwiftSample;
-			sourceTree = "<group>";
-		};
-		18E8526A1EA0C7930099553C /* Framework */ = {
-			isa = PBXGroup;
-			children = (
-				180C039E1EA31AF600A009A1 /* AZCalendarSwift.framework */,
-			);
-			path = Framework;
 			sourceTree = "<group>";
 		};
 		18E8526D1EA0C83C0099553C /* ViewControllers */ = {
@@ -149,7 +182,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Ali Azadeh";
 				TargetAttributes = {
 					18E852541EA0C76C0099553C = {
@@ -198,8 +231,19 @@
 			files = (
 				18E8525B1EA0C76C0099553C /* ViewController.swift in Sources */,
 				18E852711EA0C8740099553C /* ConvertorViewController.swift in Sources */,
+				181D76251F89DE88009AE49F /* AZGregorianMonthType.swift in Sources */,
+				181D761F1F89DE75009AE49F /* AZCalendar.swift in Sources */,
+				181D76261F89DE8B009AE49F /* AZHijriMonthType.swift in Sources */,
+				181D76221F89DE7E009AE49F /* AZMonthManager.swift in Sources */,
+				181D76241F89DE84009AE49F /* DateType.swift in Sources */,
+				181D76211F89DE7B009AE49F /* AZHijriCalendar.swift in Sources */,
+				181D76281F89DE92009AE49F /* DayType.swift in Sources */,
+				181D76201F89DE78009AE49F /* AZGregorianCalendar.swift in Sources */,
 				18E852591EA0C76C0099553C /* AppDelegate.swift in Sources */,
 				18E8526F1EA0C85C0099553C /* TodayViewController.swift in Sources */,
+				181D761E1F89DE71009AE49F /* AZConvertorCalendar.swift in Sources */,
+				181D76271F89DE8F009AE49F /* AZPersianMonthType.swift in Sources */,
+				181D76231F89DE81009AE49F /* AZPersianCalendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +279,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -243,7 +289,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -285,7 +335,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -293,7 +345,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -332,6 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.aliazadeh.SwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -349,6 +406,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.aliazadeh.SwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
