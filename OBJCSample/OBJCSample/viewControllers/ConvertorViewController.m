@@ -7,7 +7,7 @@
 //
 
 #import "ConvertorViewController.h"
-@import AZCalendarOBJC;
+#import "AZCalendar.h"
 @interface ConvertorViewController ()
 
 
@@ -74,9 +74,6 @@
     
     [self.view endEditing:YES];
     
- //   convertMode mode = [self setConvertMode];
-    
-  //  DateType *originDate = [[CalendarType alloc]initWithDay:[_txtOriginDay.text integerValue] AndMonth:[_txtOriginMonth.text integerValue] AndYear:[_txtOriginYear.text integerValue]];
     
     DateType *originDate = [[DateType alloc] initWithDay:[_txtOriginDay.text integerValue] month:[_txtOriginMonth.text integerValue] year:[_txtOriginYear.text integerValue]];
     

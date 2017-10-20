@@ -18,9 +18,6 @@ typedef enum calendar  {
 @class AZConvertorCalendar;
 @interface AZConvertorCalendar : NSObject
 
-
-
-
 +(DateType*)convertDateWithinputType:(CalendarType)inputType inputDate:(DateType*)inputDate outputType:(CalendarType)outputType;
 
 

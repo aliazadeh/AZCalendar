@@ -7,7 +7,7 @@
 //
 
 #import "TodayViewController.h"
-@import AZCalendarOBJC;
+#import "AZCalendar.h"
 @interface TodayViewController ()
 
 @end
