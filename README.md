@@ -1,10 +1,10 @@
 # AZCalendar
 AZCalendar is a  framework for IOS it has gregorian calendar , persian calendar hijri calendar (islamic calendar) , and you can convert dates from each calendar to each other simply 
 
-![alt tag](http://aliazadeh.me/AZPersianCal/img5.png)
 
+![Simulator Screen Shot - iPhone 14 Pro - 2023-03-04 at 11 30 27](https://user-images.githubusercontent.com/16123809/222925284-7a7b753b-eacc-4d62-b90b-de8ca2fc9a4b.png)
 
-
+![Simulator Screen Shot - iPhone 14 Pro - 2023-03-04 at 11 30 22](https://user-images.githubusercontent.com/16123809/222925305-b9a056db-0c67-475e-8b99-ee95684f0865.png)
 
 # Installation : 
 
@@ -14,9 +14,6 @@ Simply use the Frame work that it is in the framework directory for ObjectiveC p
 
 for Using AZCalendar you Don't need instance Object of this Class you can call function with class name 'AZCalendar
 
-<div align="center">
- <img src="http://aliazadeh.me/AZPersianCal/img1.png" width="300" height = "auto" margin = "auto" />
-</div>
 
 ## Geting today's date  :
 
