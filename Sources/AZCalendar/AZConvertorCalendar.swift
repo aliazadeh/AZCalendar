@@ -8,25 +8,6 @@
 
 import Foundation
 
-/// Supported calendar types for date conversion
-public enum CalendarType: String, CaseIterable {
-    case persian
-    case hijri
-    case gregorian
-    
-    /// Returns the corresponding Foundation Calendar.Identifier
-    var calendarIdentifier: Calendar.Identifier {
-        switch self {
-        case .persian:
-            return .persian
-        case .gregorian:
-            return .gregorian
-        case .hijri:
-            return .islamicCivil
-        }
-    }
-}
-
 /// Handles date conversion between different calendar systems
 public final class AZConvertorCalendar {
     
@@ -66,3 +47,4 @@ public final class AZConvertorCalendar {
         )
     }
 }
+

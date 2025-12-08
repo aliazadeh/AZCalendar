@@ -9,7 +9,7 @@
 import Foundation
 
 /// A simple date representation containing day, month, and year components
-public struct DateType: Equatable, Hashable, CustomStringConvertible {
+public struct DateType: Equatable, Hashable, CustomStringConvertible, Sendable {
     
     public var day: Int
     public var month: Int
@@ -52,3 +52,4 @@ extension DateType: Codable {
         case year
     }
 }
+

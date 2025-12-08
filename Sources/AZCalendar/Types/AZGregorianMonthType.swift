@@ -9,7 +9,7 @@
 import Foundation
 
 /// Represents the months in the Gregorian (Western) calendar
-public enum AZGregorianMonthType: Int, CaseIterable, CustomStringConvertible {
+public enum AZGregorianMonthType: Int, CaseIterable, CustomStringConvertible, Sendable {
     case january = 1
     case february = 2
     case march = 3
@@ -64,3 +64,4 @@ public enum AZGregorianMonthType: Int, CaseIterable, CustomStringConvertible {
         }
     }
 }
+

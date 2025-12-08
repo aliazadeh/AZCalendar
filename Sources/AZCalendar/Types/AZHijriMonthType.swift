@@ -9,7 +9,7 @@
 import Foundation
 
 /// Represents the months in the Hijri (Islamic) calendar
-public enum AZHijriMonthType: Int, CaseIterable, CustomStringConvertible {
+public enum AZHijriMonthType: Int, CaseIterable, CustomStringConvertible, Sendable {
     case muharram = 1
     case safar = 2
     case rabiAlAwwal = 3
@@ -62,3 +62,4 @@ public enum AZHijriMonthType: Int, CaseIterable, CustomStringConvertible {
         }
     }
 }
+
