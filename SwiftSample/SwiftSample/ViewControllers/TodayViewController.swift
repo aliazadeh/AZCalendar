@@ -1,127 +1,81 @@
 //
 //  TodayViewController.swift
-//  swiftSample
+//  SwiftSample
 //
 //  Created by Ali on 10/26/16.
-//  Copyright © 2016 Ali Azadeh. All rights reserved.
+//  Copyright © 2016-2024 Ali Azadeh. All rights reserved.
 //
-
-import Foundation
 
 import UIKit
 
-class TodayViewController: UIViewController {
+final class TodayViewController: UIViewController {
     
-    @IBOutlet weak var segCtrCalendarType: UISegmentedControl!
+    // MARK: - IBOutlets
+    @IBOutlet private weak var segCtrCalendarType: UISegmentedControl!
+    @IBOutlet private weak var lblDay: UILabel!
+    @IBOutlet private weak var lblMonth: UILabel!
+    @IBOutlet private weak var lblYear: UILabel!
+    @IBOutlet private weak var lblMonthName: UILabel!
+    @IBOutlet private weak var lblDayOfWeek: UILabel!
     
-    @IBOutlet weak var lblDay: UILabel!
-    
-    
-    @IBOutlet weak var lblMonth: UILabel!
-    
-    @IBOutlet weak var lblYear: UILabel!
-    
-    
-    @IBOutlet weak var lblMonthName: UILabel!
-    
-    @IBOutlet weak var lblDayOfWeek: UILabel!
-    
-    @IBAction func changedCalendarMode(_ sender: UISegmentedControl) {
-        
-        self.setDate()
-        self.setDayOfWeek()
-        self.setMonthName()
-        
-    }
-    
-    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setDate()
-        self.setDayOfWeek()
-        self.setMonthName()
-        }
-    
-    private func setDate (){
-        
-        let todayGregorian = AZCalendar.getCurrentGregorianDate()
-        let todayPersian = AZCalendar.getCurrentPersianDate()
-        let todayHijri = AZCalendar.getCurrentHijriDate()
-        
-        
-        switch (segCtrCalendarType.selectedSegmentIndex) {
-        case 0:
-            // Georgian
-           
-            lblDay.text = "\(todayGregorian.day)"
-            lblMonth.text = "\(todayGregorian.month)"
-            lblYear.text = "\(todayGregorian.year)"
-            
-            break;
-            
-        case 1 :
-            // Persian
-            
-            lblDay.text = "\(todayPersian.day)"
-            lblMonth.text = "\(todayPersian.month)"
-            lblYear.text = "\(todayPersian.year)"
-            
-            
-            break;
-            
-        case 2:
-            // Hijri or Islamic
-            
-            lblDay.text = "\(todayHijri.day)"
-            lblMonth.text = "\(todayHijri.month)"
-            lblYear.text = "\(todayHijri.year)"
-            
-            
-            
-            break;
-            
-        default :
-            break
-            
-        }
-        
-        
-        
-        
-        
+        updateDisplay()
     }
     
-    private func setDayOfWeek(){
-    self.lblDayOfWeek.text = AZCalendar.getDayName(calendar: .gregorian, date: AZCalendar.getCurrentGregorianDate())
+    // MARK: - IBActions
+    @IBAction private func changedCalendarMode(_ sender: UISegmentedControl) {
+        updateDisplay()
     }
     
-    private func setMonthName(){
-     
-       
+    // MARK: - Private Methods
+    private func updateDisplay() {
+        setDate()
+        setDayOfWeek()
+        setMonthName()
+    }
+    
+    private func setDate() {
+        let selectedIndex = segCtrCalendarType.selectedSegmentIndex
         
-        switch (segCtrCalendarType.selectedSegmentIndex) {
-            
+        let date: DateType
+        switch selectedIndex {
         case 0:
-            lblMonthName.text = AZCalendar.getMonthName(calendar: .gregorian, date: AZCalendar.getCurrentGregorianDate())
-            break
+            date = AZCalendar.getCurrentGregorianDate()
         case 1:
-            lblMonthName.text = AZCalendar.getMonthName(calendar: .persian, date: AZCalendar.getCurrentPersianDate())
-            break
+            date = AZCalendar.getCurrentPersianDate()
         case 2:
-            lblMonthName.text = AZCalendar.getMonthName(calendar: .hijri, date: AZCalendar.getCurrentHijriDate())
-
-            
-            break
+            date = AZCalendar.getCurrentHijriDate()
         default:
-            break
+            date = AZCalendar.getCurrentGregorianDate()
         }
-     
         
+        lblDay.text = "\(date.day)"
+        lblMonth.text = "\(date.month)"
+        lblYear.text = "\(date.year)"
     }
     
-   
+    private func setDayOfWeek() {
+        let gregorianDate = AZCalendar.getCurrentGregorianDate()
+        lblDayOfWeek.text = AZCalendar.getDayName(calendar: .gregorian, date: gregorianDate)
+    }
     
-    
-   
-    
+    private func setMonthName() {
+        let selectedIndex = segCtrCalendarType.selectedSegmentIndex
+        
+        let monthName: String
+        switch selectedIndex {
+        case 0:
+            monthName = AZCalendar.getMonthName(calendar: .gregorian, date: AZCalendar.getCurrentGregorianDate())
+        case 1:
+            monthName = AZCalendar.getMonthName(calendar: .persian, date: AZCalendar.getCurrentPersianDate())
+        case 2:
+            monthName = AZCalendar.getMonthName(calendar: .hijri, date: AZCalendar.getCurrentHijriDate())
+        default:
+            monthName = ""
+        }
+        
+        lblMonthName.text = monthName
+    }
 }

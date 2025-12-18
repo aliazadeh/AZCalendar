@@ -9,7 +9,7 @@
 import Foundation
 
 /// Represents the months in the Persian (Solar Hijri) calendar
-public enum AZPersianMonthType: Int, CaseIterable, CustomStringConvertible {
+public enum AZPersianMonthType: Int, CaseIterable, CustomStringConvertible, Sendable {
     case farvardin = 1
     case ordibehesht = 2
     case khordad = 3
@@ -64,3 +64,4 @@ public enum AZPersianMonthType: Int, CaseIterable, CustomStringConvertible {
         }
     }
 }
+

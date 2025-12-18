@@ -9,7 +9,7 @@
 import Foundation
 
 /// Represents days of the week
-public enum DayType: Int, CaseIterable, CustomStringConvertible {
+public enum DayType: Int, CaseIterable, CustomStringConvertible, Sendable {
     case sunday = 0
     case monday = 1
     case tuesday = 2
@@ -79,3 +79,4 @@ public enum DayType: Int, CaseIterable, CustomStringConvertible {
         }
     }
 }
+

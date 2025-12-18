@@ -1,136 +1,135 @@
 //
 //  ConvertorViewController.swift
-//  swiftSample
+//  SwiftSample
 //
 //  Created by Ali on 10/26/16.
-//  Copyright © 2016 Ali Azadeh. All rights reserved.
+//  Copyright © 2016-2024 Ali Azadeh. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-import  UIKit
-
-
-
-class ConvertorViewController: UIViewController {
+final class ConvertorViewController: UIViewController {
     
-    @IBOutlet weak var txtOriginDay: UITextField!
+    // MARK: - IBOutlets
+    @IBOutlet private weak var txtOriginDay: UITextField!
+    @IBOutlet private weak var txtOriginMonth: UITextField!
+    @IBOutlet private weak var txtOriginYear: UITextField!
+    @IBOutlet private weak var txtDestinationDay: UITextField!
+    @IBOutlet private weak var txtDestinationMonth: UITextField!
+    @IBOutlet private weak var txtDestinationYear: UITextField!
+    @IBOutlet private weak var segCtrOrigin: UISegmentedControl!
+    @IBOutlet private weak var segCtrDestination: UISegmentedControl!
     
-    @IBOutlet weak var txtOriginMonth: UITextField!
+    // MARK: - Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupTextFields()
+    }
     
-    @IBOutlet weak var txtOriginYear: UITextField!
+    // MARK: - Setup
+    private func setupTextFields() {
+        // Set keyboard type to number pad for all text fields
+        [txtOriginDay, txtOriginMonth, txtOriginYear,
+         txtDestinationDay, txtDestinationMonth, txtDestinationYear].forEach { textField in
+            textField?.keyboardType = .numberPad
+        }
+    }
     
+    // MARK: - IBActions
+    @IBAction private func segCtrOriginSelected(_ sender: UISegmentedControl) {
+        updateDestinationSegmentTitles()
+    }
     
-    @IBOutlet weak var txtDestinationDay: UITextField!
-    
-    @IBOutlet weak var txtDestinationMonth: UITextField!
-    
-    
-    @IBOutlet weak var txtDestinationYear: UITextField!
-    
-    
-    @IBOutlet weak var segCtrOrigin: UISegmentedControl!
-    
-    
-    @IBOutlet weak var segCtrDestination: UISegmentedControl!
-    
-    
-    @IBAction func segCtrOriginSelected(_ sender: UISegmentedControl) {
+    @IBAction private func btnConvert(_ sender: UIButton) {
+        view.endEditing(true)
         
+        guard let originDate = createOriginDate() else {
+            showInvalidInputAlert()
+            return
+        }
         
+        let (originCalendar, destinationCalendar) = getConvertMode()
+        let convertedDate = AZCalendar.convertDate(
+            inputType: originCalendar,
+            inputDate: originDate,
+            outputType: destinationCalendar
+        )
         
-        
-        switch (segCtrOrigin.selectedSegmentIndex) {
+        displayConvertedDate(convertedDate)
+    }
+    
+    // MARK: - Private Methods
+    private func updateDestinationSegmentTitles() {
+        switch segCtrOrigin.selectedSegmentIndex {
         case 0:
             segCtrDestination.setTitle("Persian", forSegmentAt: 0)
             segCtrDestination.setTitle("Hijri", forSegmentAt: 1)
-            break;
-            
         case 1:
-            
-            segCtrDestination.setTitle("Georgian", forSegmentAt: 0)
+            segCtrDestination.setTitle("Gregorian", forSegmentAt: 0)
             segCtrDestination.setTitle("Hijri", forSegmentAt: 1)
-            
-            break;
-            
         case 2:
-            
-            segCtrDestination.setTitle("Georgian", forSegmentAt: 0)
+            segCtrDestination.setTitle("Gregorian", forSegmentAt: 0)
             segCtrDestination.setTitle("Persian", forSegmentAt: 1)
-            
-            break;
-            
-        default:
-            break;
-        }
-        
-        
-        
-        
-    }
-    
-    
-    
-    @IBAction func btnConvert(_ sender: UIButton) {
-        
-        
-        self.view.endEditing(true)
-        
-        let originDate = DateType.init(day: Int(txtOriginDay.text!)!  , month: Int(txtOriginMonth.text!)! , year: Int(txtOriginYear.text!)! )
-        //
-        
-        var convertedDate = DateType.init(day: 0, month: 0, year: 0)
-        
-        let originCalendar = getConvertMode().origin
-        let destinationCalendar = getConvertMode().destination
-        
-        convertedDate = AZCalendar.convertDate(inputType: originCalendar, inputDate: originDate, outputType: destinationCalendar)
-        
-
-        
-        txtDestinationDay.text = "\(convertedDate.day)"
-        txtDestinationMonth.text = "\(convertedDate.month)"
-        txtDestinationYear.text = "\(convertedDate.year)"
-        
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    
-    private func getConvertMode() -> (origin : CalendarType , destination : CalendarType) {
-        
-        var mode : (origin : CalendarType , destination : CalendarType) = (CalendarType.gregorian , CalendarType.persian)
-        
-        
-        switch segCtrOrigin.selectedSegmentIndex {
-        case 0:
-            if ( segCtrDestination.selectedSegmentIndex == 0 ) { /* Georgian to Persian */
-                mode = (origin : CalendarType.gregorian , destination : CalendarType.persian)
-            } else {/* Georgian to Hijri */    mode = (origin : CalendarType.gregorian , destination : CalendarType.hijri) }
-            break
-        case 1:
-            
-            if ( segCtrDestination.selectedSegmentIndex == 0) { /* Persian to Georgian */
-                 mode = (origin : CalendarType.persian , destination : CalendarType.gregorian)
-            } else {/* Persian to Hijri */     mode = (origin : CalendarType.persian , destination : CalendarType.hijri) }
-            break
-            
-        case 2:
-            
-            if ( segCtrDestination.selectedSegmentIndex == 0) { /* Hijri to Georgian */
-                 mode = (origin : CalendarType.hijri , destination : CalendarType.gregorian)
-            } else {/* Hijri to Persian */    mode = (origin : CalendarType.hijri , destination : CalendarType.persian)
-            }
-            break
-            
         default:
             break
         }
-        
-        return  mode;
     }
     
+    private func createOriginDate() -> DateType? {
+        guard let dayText = txtOriginDay.text,
+              let monthText = txtOriginMonth.text,
+              let yearText = txtOriginYear.text,
+              let day = Int(dayText),
+              let month = Int(monthText),
+              let year = Int(yearText),
+              isValidDate(day: day, month: month, year: year) else {
+            return nil
+        }
+        
+        return DateType(day: day, month: month, year: year)
+    }
+    
+    private func isValidDate(day: Int, month: Int, year: Int) -> Bool {
+        return day >= 1 && day <= 31 &&
+               month >= 1 && month <= 12 &&
+               year > 0
+    }
+    
+    private func displayConvertedDate(_ date: DateType) {
+        txtDestinationDay.text = "\(date.day)"
+        txtDestinationMonth.text = "\(date.month)"
+        txtDestinationYear.text = "\(date.year)"
+    }
+    
+    private func showInvalidInputAlert() {
+        let alert = UIAlertController(
+            title: "Invalid Input",
+            message: "Please enter valid day, month, and year values.",
+            preferredStyle: .alert
+        )
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
+    }
+    
+    private func getConvertMode() -> (origin: CalendarType, destination: CalendarType) {
+        let originIndex = segCtrOrigin.selectedSegmentIndex
+        let destinationIndex = segCtrDestination.selectedSegmentIndex
+        
+        switch originIndex {
+        case 0: // Gregorian origin
+            return destinationIndex == 0
+                ? (.gregorian, .persian)
+                : (.gregorian, .hijri)
+        case 1: // Persian origin
+            return destinationIndex == 0
+                ? (.persian, .gregorian)
+                : (.persian, .hijri)
+        case 2: // Hijri origin
+            return destinationIndex == 0
+                ? (.hijri, .gregorian)
+                : (.hijri, .persian)
+        default:
+            return (.gregorian, .persian)
+        }
+    }
 }
